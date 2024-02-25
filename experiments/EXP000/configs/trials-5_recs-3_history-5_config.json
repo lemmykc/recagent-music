@@ -1,0 +1,1 @@
+{"name": "trials-5_recs-3_history-5", "exp_name": "EXP000", "num_trials": 5, "length_history_sequence": 5, "num_recommendations": 3, "n_lyric_lines": 4, "only_smartradio": false, "lyric_options": ["no_lyric_summary", "chatgpt_memory_summary", "chatgpt_scraped_lyrics_summary", "first_n_lyric_lines"], "user_profile_options": ["simple", "expanded"], "big_or_small_data": "small"}

@@ -1,0 +1,232 @@
+trial_id=0, idx_rec=0, lyric_option=no_lyric_summary, user_profile_option=simple
+
+PROMPT
+
+The user is a 24 year old female who likes pop, r&b, adult contemporary, hip hop and rap music. They have just listened to the following songs in the evening:
+
+Let Me Love You by Mario, classified under genres pop and r&b, which was released in the year 2004, which goes for a duration of 249.0 seconds. The user played.
+
+It's All Coming Back to Me Now (Radio Version) by Céline Dion, classified under genres pop rock, pop and adult contemporary, which was released in the year 2019, which goes for a duration of 329.0 seconds. The user skipped.
+
+Solteiro Nunca Está Só by MC Kekel, classified under genres funk carioca, which was released in the year 2018, which goes for a duration of 147.0 seconds. The user skipped.
+
+China by Anuel AA, classified under genres latino and reggaeton, which was released in the year 2019, which goes for a duration of 301.0 seconds. The user skipped.
+
+Calma (Alan Walker Remix) by Pedro Capó, classified under genres latin pop, electro and edm, which was released in the year 2019, which goes for a duration of 193.0 seconds. The user played.
+
+
+The Deezer recommender has just recommended the next song:
+Narcotic by YouNotUs, classified under genres deep house, house, pop and edm, which was released in the year 2019, which goes for a duration of 192.0 seconds.
+
+Does the user decide to play or skip the next recommended song? 
+If play, please respond only with [PLAY], or if they skip please respond only with [SKIP].
+
+RESPONSE
+[PLAY]
+
+ChatGPT predicted play. The correct answer was play.
+
+--------------------------------------------------------------------------------
+trial_id=0, idx_rec=0, lyric_option=no_lyric_summary, user_profile_option=expanded
+
+PROMPT
+
+The user is a 24 year old female, who typically enjoys pop, r&b, adult contemporary, hip hop and rap music. In the mornings, they prefer pop, rock and alternative, while in the evenings, they lean towards pop, hip hop and adult contemporary. Recently, they've shown more interest in pop, r&b and hip hop. Their top artists include Pitbull, Soraia Ramos and Selena Gomez, and they have a particular fondness for music from the 2010s. They have just listened to the following songs in the evening:
+
+Let Me Love You by Mario, classified under genres pop and r&b, which was released in the year 2004, which goes for a duration of 249.0 seconds. The user played.
+
+It's All Coming Back to Me Now (Radio Version) by Céline Dion, classified under genres pop rock, pop and adult contemporary, which was released in the year 2019, which goes for a duration of 329.0 seconds. The user skipped.
+
+Solteiro Nunca Está Só by MC Kekel, classified under genres funk carioca, which was released in the year 2018, which goes for a duration of 147.0 seconds. The user skipped.
+
+China by Anuel AA, classified under genres latino and reggaeton, which was released in the year 2019, which goes for a duration of 301.0 seconds. The user skipped.
+
+Calma (Alan Walker Remix) by Pedro Capó, classified under genres latin pop, electro and edm, which was released in the year 2019, which goes for a duration of 193.0 seconds. The user played.
+
+
+The Deezer recommender has just recommended the next song:
+Narcotic by YouNotUs, classified under genres deep house, house, pop and edm, which was released in the year 2019, which goes for a duration of 192.0 seconds.
+
+Does the user decide to play or skip the next recommended song? 
+If play, please respond only with [PLAY], or if they skip please respond only with [SKIP].
+
+RESPONSE
+SKIP
+
+ChatGPT predicted skip. The correct answer was play.
+
+--------------------------------------------------------------------------------
+trial_id=0, idx_rec=0, lyric_option=chatgpt_memory_summary, user_profile_option=simple
+
+PROMPT
+
+The user is a 24 year old female who likes pop, r&b, adult contemporary, hip hop and rap music. They have just listened to the following songs in the evening:
+
+Let Me Love You by Mario, classified under genres pop and r&b, which was released in the year 2004, which goes for a duration of 249.0 seconds. The summary is ''Let Me Love You' by Mario is a mid-2000s R&B hit that explores themes of romantic persistence and emotional support, with its smooth vocals, catchy melodies, and contemporary production creating a feel-good and uplifting mood.'. The user played.
+
+It's All Coming Back to Me Now (Radio Version) by Céline Dion, classified under genres pop rock, pop and adult contemporary, which was released in the year 2019, which goes for a duration of 329.0 seconds. The summary is '"It's All Coming Back to Me Now (Radio Version)" by Céline Dion is a powerful and emotionally charged ballad that explores themes of love, loss, and nostalgia through its soaring vocals, dramatic orchestration, and hauntingly beautiful lyrics, creating a melancholic and cathartic mood.'. The user skipped.
+
+Solteiro Nunca Está Só by MC Kekel, classified under genres funk carioca, which was released in the year 2018, which goes for a duration of 147.0 seconds. The summary is '"Solteiro Nunca Está Só" by MC Kekel is a lively and upbeat funk carioca song that celebrates the freedom and joy of being single, with its catchy melodies, energetic rhythms, and playful lyrics.'. The user skipped.
+
+China by Anuel AA, classified under genres latino and reggaeton, which was released in the year 2019, which goes for a duration of 301.0 seconds. The summary is '"China" by Anuel AA is a reggaeton-infused Latin trap song that combines catchy melodies, explicit lyrics about desire and seduction, and a confident, energetic mood, creating a sensual and provocative atmosphere.'. The user skipped.
+
+Calma (Alan Walker Remix) by Pedro Capó, classified under genres latin pop, electro and edm, which was released in the year 2019, which goes for a duration of 193.0 seconds. The summary is 'None'. The user played.
+
+
+The Deezer recommender has just recommended the next song:
+Narcotic by YouNotUs, classified under genres deep house, house, pop and edm, which was released in the year 2019, which goes for a duration of 192.0 seconds. The summary is '"Narcotic" by YouNotUs is a catchy electronic dance track with introspective lyrics that explore the addictive nature of love, creating a bittersweet mood that combines elements of pop and EDM.'.
+
+Does the user decide to play or skip the next recommended song? 
+If play, please respond only with [PLAY], or if they skip please respond only with [SKIP].
+
+RESPONSE
+[PLAY]
+
+ChatGPT predicted play. The correct answer was play.
+
+--------------------------------------------------------------------------------
+trial_id=0, idx_rec=0, lyric_option=chatgpt_memory_summary, user_profile_option=expanded
+
+PROMPT
+
+The user is a 24 year old female, who typically enjoys pop, r&b, adult contemporary, hip hop and rap music. In the mornings, they prefer pop, rock and alternative, while in the evenings, they lean towards pop, hip hop and adult contemporary. Recently, they've shown more interest in pop, r&b and hip hop. Their top artists include Pitbull, Soraia Ramos and Selena Gomez, and they have a particular fondness for music from the 2010s. They have just listened to the following songs in the evening:
+
+Let Me Love You by Mario, classified under genres pop and r&b, which was released in the year 2004, which goes for a duration of 249.0 seconds. The summary is ''Let Me Love You' by Mario is a mid-2000s R&B hit that explores themes of romantic persistence and emotional support, with its smooth vocals, catchy melodies, and contemporary production creating a feel-good and uplifting mood.'. The user played.
+
+It's All Coming Back to Me Now (Radio Version) by Céline Dion, classified under genres pop rock, pop and adult contemporary, which was released in the year 2019, which goes for a duration of 329.0 seconds. The summary is '"It's All Coming Back to Me Now (Radio Version)" by Céline Dion is a powerful and emotionally charged ballad that explores themes of love, loss, and nostalgia through its soaring vocals, dramatic orchestration, and hauntingly beautiful lyrics, creating a melancholic and cathartic mood.'. The user skipped.
+
+Solteiro Nunca Está Só by MC Kekel, classified under genres funk carioca, which was released in the year 2018, which goes for a duration of 147.0 seconds. The summary is '"Solteiro Nunca Está Só" by MC Kekel is a lively and upbeat funk carioca song that celebrates the freedom and joy of being single, with its catchy melodies, energetic rhythms, and playful lyrics.'. The user skipped.
+
+China by Anuel AA, classified under genres latino and reggaeton, which was released in the year 2019, which goes for a duration of 301.0 seconds. The summary is '"China" by Anuel AA is a reggaeton-infused Latin trap song that combines catchy melodies, explicit lyrics about desire and seduction, and a confident, energetic mood, creating a sensual and provocative atmosphere.'. The user skipped.
+
+Calma (Alan Walker Remix) by Pedro Capó, classified under genres latin pop, electro and edm, which was released in the year 2019, which goes for a duration of 193.0 seconds. The summary is 'None'. The user played.
+
+
+The Deezer recommender has just recommended the next song:
+Narcotic by YouNotUs, classified under genres deep house, house, pop and edm, which was released in the year 2019, which goes for a duration of 192.0 seconds. The summary is '"Narcotic" by YouNotUs is a catchy electronic dance track with introspective lyrics that explore the addictive nature of love, creating a bittersweet mood that combines elements of pop and EDM.'.
+
+Does the user decide to play or skip the next recommended song? 
+If play, please respond only with [PLAY], or if they skip please respond only with [SKIP].
+
+RESPONSE
+SKIP
+
+ChatGPT predicted skip. The correct answer was play.
+
+--------------------------------------------------------------------------------
+trial_id=0, idx_rec=0, lyric_option=chatgpt_scraped_lyrics_summary, user_profile_option=simple
+
+PROMPT
+
+The user is a 24 year old female who likes pop, r&b, adult contemporary, hip hop and rap music. They have just listened to the following songs in the evening:
+
+Let Me Love You by Mario, classified under genres pop and r&b, which was released in the year 2004, which goes for a duration of 249.0 seconds. The summary is 'The lyrics to "Let Me Love You" by Mario explore the theme of a woman who is in a toxic relationship and doesn't realize her own worth, while the emotional mood of the song is a mix of empathy and determination, with a genre that combines R&B and pop elements to create a smooth and catchy sound.'. The user played.
+
+It's All Coming Back to Me Now (Radio Version) by Céline Dion, classified under genres pop rock, pop and adult contemporary, which was released in the year 2019, which goes for a duration of 329.0 seconds. The summary is 'None'. The user skipped.
+
+Solteiro Nunca Está Só by MC Kekel, classified under genres funk carioca, which was released in the year 2018, which goes for a duration of 147.0 seconds. The summary is 'None'. The user skipped.
+
+China by Anuel AA, classified under genres latino and reggaeton, which was released in the year 2019, which goes for a duration of 301.0 seconds. The summary is 'The lyrics to the song "China" by Anuel AA depict a narrative of infidelity and temptation, as the protagonist ignores his partner's calls to engage in dancing and partying with another woman, ultimately feeling remorseful for his actions; the lyrics convey a mix of reggaeton and trap genres, with a seductive and energetic mood.'. The user skipped.
+
+Calma (Alan Walker Remix) by Pedro Capó, classified under genres latin pop, electro and edm, which was released in the year 2019, which goes for a duration of 193.0 seconds. The summary is 'None'. The user played.
+
+
+The Deezer recommender has just recommended the next song:
+Narcotic by YouNotUs, classified under genres deep house, house, pop and edm, which was released in the year 2019, which goes for a duration of 192.0 seconds. The summary is 'None'.
+
+Does the user decide to play or skip the next recommended song? 
+If play, please respond only with [PLAY], or if they skip please respond only with [SKIP].
+
+RESPONSE
+[PLAY]
+
+ChatGPT predicted play. The correct answer was play.
+
+--------------------------------------------------------------------------------
+trial_id=0, idx_rec=0, lyric_option=chatgpt_scraped_lyrics_summary, user_profile_option=expanded
+
+PROMPT
+
+The user is a 24 year old female, who typically enjoys pop, r&b, adult contemporary, hip hop and rap music. In the mornings, they prefer pop, rock and alternative, while in the evenings, they lean towards pop, hip hop and adult contemporary. Recently, they've shown more interest in pop, r&b and hip hop. Their top artists include Pitbull, Soraia Ramos and Selena Gomez, and they have a particular fondness for music from the 2010s. They have just listened to the following songs in the evening:
+
+Let Me Love You by Mario, classified under genres pop and r&b, which was released in the year 2004, which goes for a duration of 249.0 seconds. The summary is 'The lyrics to "Let Me Love You" by Mario explore the theme of a woman who is in a toxic relationship and doesn't realize her own worth, while the emotional mood of the song is a mix of empathy and determination, with a genre that combines R&B and pop elements to create a smooth and catchy sound.'. The user played.
+
+It's All Coming Back to Me Now (Radio Version) by Céline Dion, classified under genres pop rock, pop and adult contemporary, which was released in the year 2019, which goes for a duration of 329.0 seconds. The summary is 'None'. The user skipped.
+
+Solteiro Nunca Está Só by MC Kekel, classified under genres funk carioca, which was released in the year 2018, which goes for a duration of 147.0 seconds. The summary is 'None'. The user skipped.
+
+China by Anuel AA, classified under genres latino and reggaeton, which was released in the year 2019, which goes for a duration of 301.0 seconds. The summary is 'The lyrics to the song "China" by Anuel AA depict a narrative of infidelity and temptation, as the protagonist ignores his partner's calls to engage in dancing and partying with another woman, ultimately feeling remorseful for his actions; the lyrics convey a mix of reggaeton and trap genres, with a seductive and energetic mood.'. The user skipped.
+
+Calma (Alan Walker Remix) by Pedro Capó, classified under genres latin pop, electro and edm, which was released in the year 2019, which goes for a duration of 193.0 seconds. The summary is 'None'. The user played.
+
+
+The Deezer recommender has just recommended the next song:
+Narcotic by YouNotUs, classified under genres deep house, house, pop and edm, which was released in the year 2019, which goes for a duration of 192.0 seconds. The summary is 'None'.
+
+Does the user decide to play or skip the next recommended song? 
+If play, please respond only with [PLAY], or if they skip please respond only with [SKIP].
+
+RESPONSE
+SKIP
+
+ChatGPT predicted skip. The correct answer was play.
+
+--------------------------------------------------------------------------------
+trial_id=0, idx_rec=0, lyric_option=first_n_lyric_lines, user_profile_option=simple
+
+PROMPT
+
+The user is a 24 year old female who likes pop, r&b, adult contemporary, hip hop and rap music. They have just listened to the following songs in the evening:
+
+Let Me Love You by Mario, classified under genres pop and r&b, which was released in the year 2004, which goes for a duration of 249.0 seconds. The first few lines of the song are 'Mmmm ..... Mmmmm.... Yeah....Mmmmm....Yeah, Yeah, Yeah Mmmm ..... Mmmmm.... Yeah....Mmmmm....Yeah, Yeah, Yeah  Baby, I just don't get it'. The user played.
+
+It's All Coming Back to Me Now (Radio Version) by Céline Dion, classified under genres pop rock, pop and adult contemporary, which was released in the year 2019, which goes for a duration of 329.0 seconds. The first few lines of the song are 'None'. The user skipped.
+
+Solteiro Nunca Está Só by MC Kekel, classified under genres funk carioca, which was released in the year 2018, which goes for a duration of 147.0 seconds. The first few lines of the song are 'None'. The user skipped.
+
+China by Anuel AA, classified under genres latino and reggaeton, which was released in the year 2019, which goes for a duration of 301.0 seconds. The first few lines of the song are '(Mi mujer me estaba llamando) DY, Dirili Daddy (Contigo perreando) Ozuna '. The user skipped.
+
+Calma (Alan Walker Remix) by Pedro Capó, classified under genres latin pop, electro and edm, which was released in the year 2019, which goes for a duration of 193.0 seconds. The first few lines of the song are 'None'. The user played.
+
+
+The Deezer recommender has just recommended the next song:
+Narcotic by YouNotUs, classified under genres deep house, house, pop and edm, which was released in the year 2019, which goes for a duration of 192.0 seconds. The first few lines of the song are 'None'.
+
+Does the user decide to play or skip the next recommended song? 
+If play, please respond only with [PLAY], or if they skip please respond only with [SKIP].
+
+RESPONSE
+[PLAY]
+
+ChatGPT predicted play. The correct answer was play.
+
+--------------------------------------------------------------------------------
+trial_id=0, idx_rec=0, lyric_option=first_n_lyric_lines, user_profile_option=expanded
+
+PROMPT
+
+The user is a 24 year old female, who typically enjoys pop, r&b, adult contemporary, hip hop and rap music. In the mornings, they prefer pop, rock and alternative, while in the evenings, they lean towards pop, hip hop and adult contemporary. Recently, they've shown more interest in pop, r&b and hip hop. Their top artists include Pitbull, Soraia Ramos and Selena Gomez, and they have a particular fondness for music from the 2010s. They have just listened to the following songs in the evening:
+
+Let Me Love You by Mario, classified under genres pop and r&b, which was released in the year 2004, which goes for a duration of 249.0 seconds. The first few lines of the song are 'Mmmm ..... Mmmmm.... Yeah....Mmmmm....Yeah, Yeah, Yeah Mmmm ..... Mmmmm.... Yeah....Mmmmm....Yeah, Yeah, Yeah  Baby, I just don't get it'. The user played.
+
+It's All Coming Back to Me Now (Radio Version) by Céline Dion, classified under genres pop rock, pop and adult contemporary, which was released in the year 2019, which goes for a duration of 329.0 seconds. The first few lines of the song are 'None'. The user skipped.
+
+Solteiro Nunca Está Só by MC Kekel, classified under genres funk carioca, which was released in the year 2018, which goes for a duration of 147.0 seconds. The first few lines of the song are 'None'. The user skipped.
+
+China by Anuel AA, classified under genres latino and reggaeton, which was released in the year 2019, which goes for a duration of 301.0 seconds. The first few lines of the song are '(Mi mujer me estaba llamando) DY, Dirili Daddy (Contigo perreando) Ozuna '. The user skipped.
+
+Calma (Alan Walker Remix) by Pedro Capó, classified under genres latin pop, electro and edm, which was released in the year 2019, which goes for a duration of 193.0 seconds. The first few lines of the song are 'None'. The user played.
+
+
+The Deezer recommender has just recommended the next song:
+Narcotic by YouNotUs, classified under genres deep house, house, pop and edm, which was released in the year 2019, which goes for a duration of 192.0 seconds. The first few lines of the song are 'None'.
+
+Does the user decide to play or skip the next recommended song? 
+If play, please respond only with [PLAY], or if they skip please respond only with [SKIP].
+
+RESPONSE
+SKIP
+
+ChatGPT predicted skip. The correct answer was play.
+
+--------------------------------------------------------------------------------

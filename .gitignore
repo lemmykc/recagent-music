@@ -1,0 +1,17 @@
+# Ignore the .env file with OPENAI_API_KEY
+.env
+.venv
+
+# The data is private
+simcares_data/simcares_streams.csv
+simcares_data/simcares_users.csv
+simcares_data/simcares_catalog.csv
+simcares_data/simcares_20FEB2024_users.csv
+simcares_data/simcares_20FEB2024_streams.csv
+simcares_data/simcares_20FEB2024_catalog.csv
+
+# Ignore logs
+*.log
+
+# Ignore temp files
+*.tmp
