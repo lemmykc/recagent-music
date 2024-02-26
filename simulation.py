@@ -354,7 +354,6 @@ class SimulationManager:
         # Initialise attributes and create directories
         self.config = config
         self.results = []
-        experiments_folder = directory_creator("", "experiments")
         exp_dir = directory_creator("experiments", self.config['exp_name'])
         results_dir = directory_creator(exp_dir, "results")
         text_logs_dir = directory_creator(exp_dir, "text_logs")
@@ -472,17 +471,42 @@ class SimulationManager:
         return concatenated_df
         
     @staticmethod
-    def print_hyperparameter_comparison_results(results_df: pd.DataFrame):
+    def calculate_p_value(successes, trials):
+        """Calculates the p-value for a given number of successes and trials using a binomial test with a success probability of 0.5.
+
+        Args:
+            successes (float or int): The number of successes observed in the experiment. This value is rounded to the nearest integer.
+            trials (int): The total number of trials conducted in the experiment.
+            
+        Returns:
+            float: The p-value from the binomial test, indicating the probability of observing the given number of successes (or more 
+                    extreme) under the null hypothesis of equal chance of success and failure (p=0.5).
         """
-        NOTE - While this function can be used to print concatenated results, it _does_ assume that the config parameters are the same. 
-        Analyzes and prints the comparison results of different simulation settings such as user gender, song recommendation
-        position, lyric options, and user profile options. It calculates and displays the average scores for each category
-        and performs statistical tests to compare these scores against random chance.
+        # Ensure inputs are integers
+        successes = round(successes)
+        trials = int(trials)
+        return binomtest(successes, trials, p=0.5).pvalue
+        
+    @staticmethod
+    def print_hyperparameter_comparison_results(results_df: pd.DataFrame,
+                                                num_recommendations: int = 3,
+                                                length_history_sequence: int = 5):
+        """
+        Analyzes and prints the comparison results of different simulation settings, including user gender, song recommendation position, lyric options, and user profile options.
+        
+        This method calculates the overall accuracy and performs a binomial test to compare these scores against random chance. It then iterates through specified hyperparameters to compare their impact on recommendation accuracy, finally presenting the best hyperparameter combinations based on average scores.
+        
+        Args:
+            results_df (pd.DataFrame): The DataFrame containing simulation results to analyze.
+            num_recommendations (int, optional): The number of song recommendations made. Defaults to 3.
+            length_history_sequence (int, optional): The length of the user's song history sequence considered. Defaults to 5.
         """
         # Get num_trials etc. from dataframe 
         num_trials = results_df['trial_id'].max() + 1
-        num_recommendations = results_df['idx_recommended_song'].max() + 1
-        length_history_sequence = len(results_df['song_history'].iloc[0])
+        # num_recommendations = results_df['idx_recommended_song'].max() + 1
+        #length_history_sequence = len(results_df['song_history'].iloc[0])
+        # The last line of code there does not work because of interpreting the literals. There is an issue 
+        # with interpreting the Timestamp. 
 
         # Calculate overall accuracy and perform binomial test
         overall_accuracy = results_df['score'].mean()
@@ -504,7 +528,7 @@ class SimulationManager:
 
         # Compare each hyperparameter
         for param in hyperparameters:
-            print(f"\nComparing '{param}' Average Scores:")
+            print(f"\nComparing '{param}' Accuracy:")
             groups = results_df.groupby(param)
 
             # For each group, print the average score and perform binomial test
@@ -514,4 +538,36 @@ class SimulationManager:
                 trials = len(group)
                 p_value = binomtest(successes, trials, p=0.5).pvalue
 
-                print(f"  {name}: {avg_score:.2f}, P-value: {p_value:.4f}")
+                print(f"  {name}: {avg_score:.2f}, P-value: {p_value:.4f} (n={trials})")
+
+        # Begin new code for analyzing best hyperparameter combinations
+        # Remove 'user_gender' as it isn't really a hyperparameter as such
+        hyperparameters.remove('user_gender')
+        print("\nBest Hyperparameter Combinations (idx_recommended_song-lyric_option-user_profile_option):")
+        results_df['combination'] = results_df[hyperparameters].astype(str).agg('-'.join, axis=1)
+        
+        # Initialize an empty list to collect data
+        agg_results_data = []
+
+        for combination, group in results_df.groupby('combination'):
+            avg_score = group['score'].mean()
+            successes = round(group['score'].sum())  # Total successes is the sum of scores, rounded
+            trials = len(group)  # Number of trials is the count of rows in the group
+            p_value = SimulationManager.calculate_p_value(successes, trials)
+
+            # Append a dictionary with the results for this combination to the list
+            agg_results_data.append({
+                'Combination': combination,
+                'AvgScore': avg_score,
+                'Trials': trials,
+                'PValue': p_value
+            })
+
+        # Convert the list of dictionaries to a DataFrame all at once
+        agg_results = pd.DataFrame(agg_results_data)
+
+        # Sort the aggregated results by AvgScore in descending order
+        agg_results = agg_results.sort_values(by='AvgScore', ascending=False)
+
+        # Print the DataFrame as a table
+        print(agg_results.to_string(index=False))
