@@ -541,9 +541,10 @@ class SimulationManager:
                 print(f"  {name}: {avg_score:.2f}, P-value: {p_value:.4f} (n={trials})")
 
         # Begin new code for analyzing best hyperparameter combinations
-        # Remove 'user_gender' as it isn't really a hyperparameter as such
+        # Remove 'user_gender' and 'idx_recommended_song' as they're not _really_ hyperparameters
         hyperparameters.remove('user_gender')
-        print("\nBest Hyperparameter Combinations (idx_recommended_song-lyric_option-user_profile_option):")
+        hyperparameters.remove('idx_recommended_song')
+        print("\nBest Hyperparameter Combinations (lyric_option-user_profile_option):")
         results_df['combination'] = results_df[hyperparameters].astype(str).agg('-'.join, axis=1)
         
         # Initialize an empty list to collect data
